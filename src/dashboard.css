@@ -1,0 +1,84 @@
+body {
+  background-color: #ffffff; /* Set background color to white */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Optional: Set a default font */
+  height: 100vh; /* Ensure body takes full viewport height */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+.dashboard-page {
+  text-align: center; /* Center text within the page */
+}
+.welcome-message {
+  font-size: 35px; /* Adjust size as needed */
+  font-weight: bold;
+  color: #000000;
+
+  margin-bottom: 16px; /* Space between welcome message and tiles */
+}
+.add-user-button {
+  position: absolute; /* Position absolutely within the relative container */
+  top: 16px; /* Distance from the top */
+  right: 16px; /* Distance from the right */
+  background-color: transparent; /* Transparent background */
+  color: #000000; /* Black text color */
+  border: 2px solid #000000; /* Black border */
+  padding: 8px 16px; /* Padding for the button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+}
+.add-user-button:hover {
+  background-color: #04daa1; /* Light background on hover */
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap tiles if needed */
+  gap: 16px;
+  padding: 16px;
+  background-color: #ffffff; /* Optional: Set background color to white */
+  max-width: 90vw; /* Adjust width to fit the viewport */
+  max-height: 90vh; /* Adjust height to fit the viewport */
+  justify-content: center; /* Center tiles horizontally */
+}
+
+.dashboard-tile {
+  flex: 1 1 calc(25% - 32px); /* Adjust for 4 tiles */
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #f5f5f5; /* Tile background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000000; /* Font color set to black */
+  display: flex;
+  flex-direction: column; /* Stack contents vertically */
+  justify-content: space-between; /* Space between text and button */
+  min-width: 200px; /* Minimum width for each tile */
+  height: 200px; /* Fixed height for all tiles */
+}
+
+.dashboard-tile h2 {
+  margin-top: 0;
+  color: #000000; /* Heading color set to black */
+}
+
+.dashboard-tile p {
+  color: #000000; /* Paragraph color set to black */
+}
+
+.tile-button {
+  background-color: #056c4f; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+
+.tile-button:hover {
+  background-color: #045235; /* Button hover color */
+}
